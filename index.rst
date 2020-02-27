@@ -1,16 +1,24 @@
-f1tenth - build documentation
+f1tenth - course kit
 ================================================
 
-Welcome to the official build documentation of `F1tenth <http://f1tenth.org/>`_. 
+Welcome to the official course kit documentation of `F1tenth <http://f1tenth.org/>`_. 
 
-If you want to learn how to make the vehicle, :ref:`Getting Started <doc_build_intro>` walks through how to build the car from ground up. It will also explain how to install all of the required firmware and software.
+Here, you will find all the information needed to get your own f1tenth course running at your institution.
 
-If you already have a working car and the work environment set up, then check out :ref:`Going Forward <doc_going_forward_intro>` to learn how to install the simulator and implement some fun algorithms.
+This is not a public documentation as it contains solutions to the labs.
 
-Join in the discussion with us on Slack! There, you can ask build questions, bring up software concerns, look for competition updates, and much more.
+There are three parts to this documentation.
+
+#. :ref:`Course Overview <doc_overview>` gives a brief overview of what the class is about and a snapshot of the materials that are presented. It also details the prerequisities needed.
+#. :ref:`Lectures <doc_lecture_intro>` contains lecture materials (recordings and slides).
+#. :ref:`Labs <doc_labs_intro>` has lab handouts and solutions.
+
+For files of the f1tenth logo, see :ref:`Press <doc_logos>`
+
+Join in the discussion with us on Slack! This is a Slack workspace that is specific to educators, collaborators, and organizers. 
 
 .. image:: img/add-to-slack.png
-   :target: https://join.slack.com/t/f1tenth-teams/shared_invite/enQtMzc3ODU2ODM1NzE3LTBjMmVkMzZjZTJiNWUzZDFhZTJiODgzMjg0MTA1MDAxZTUxMzkwMDRhNTM2NzdjNDc5MTk5YTc5YmNhNTdhMTU
+   :target: https://join.slack.com/t/f1tenth-teams/shared_invite/enQtMzc3ODU2ODM1NzE3LTBjMmVkMzZjZTJiNWUzZDFhZTJiODgzMjg0MTA1MDAxZTUxMzkwMDRhNTM2NzdjNDc5MTk5YTc5YmNhNTdhMTUs
 
 The table of contents below and in the sidebar should let you easily access the
 documentation for your topic of interest. You can also use the search function
@@ -39,44 +47,31 @@ The main documentation for the site is organized into the following sections:
 
 .. toctree::
    :maxdepth: 1
-   :caption: Getting started
-   :name: sec-build
+   :caption: Introduction
+   :name: sec-overview
 
-   getting_started/intro 
-   getting_started/build_car
-   getting_started/software_setup/index
-   getting_started/firmware
-   getting_started/appendix/index
-   getting_started/faq
-.. getting_started/bom
+   overview/intro
 
 .. toctree::
    :maxdepth: 1
-   :caption: Going Forward
-   :name: sec-forward
+   :caption: Course Sessions
+   :name: sec-lectures
 
-   going_forward/intro
-   going_forward/simulation
-   going_forward/algorithms
+   lectures/intro
 
+.. toctree::
+   :maxdepth: 1
+   :caption: Assignments
+   :name: sec-labs
 
-.. 
-	.. toctree::
-..    :maxdepth: 1
-..    :caption: Learn
-..    :name: sec-learn
+   labs/index
 
-..    learn/index
-  
+.. toctree::
+   :maxdepth: 1
+   :caption: Press
+   :name: sec-press
 
-.. 
-	.. toctree::
-..    :maxdepth: 1
-..    :caption: Press
-..    :name: sec-press
-
-..    press/index
-
+   press/logos
 
 .. toctree::
    :maxdepth: 1
