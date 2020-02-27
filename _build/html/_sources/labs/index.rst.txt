@@ -10,8 +10,8 @@ Each lab folder contains the skeleton code and supplemental code to be distribut
 
 .. toctree::
    :maxdepth: 1
-   :caption: Course Sessions
-   :name: sec-lectures
+   :caption: Labs
+   :name: sec-labs-intro
 
    lab1
    lab2

@@ -50,7 +50,7 @@ The main documentation for the site is organized into the following sections:
    :caption: Introduction
    :name: sec-overview
 
-   overview/intro
+   overview/index
 
 .. toctree::
    :maxdepth: 1
