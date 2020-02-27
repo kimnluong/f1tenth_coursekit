@@ -1,8 +1,8 @@
 .. _doc_lab1:
 
 
-Lab 1
-==================
+Lab 1 - Intro to ROS
+======================
 
 `Repo <https://github.com/f1tenth/f110_ros/tree/master/ros_lab>`_
 

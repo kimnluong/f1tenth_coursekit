@@ -1,7 +1,7 @@
 .. _doc_lab8:
 
 
-Lab 7 - Perception and Planning
+Lab 8 - Perception and Planning
 =================================
 
 `Repo <https://github.com/f1tenth/f110_ros/tree/master/vision_latex>`_

@@ -1,7 +1,7 @@
 .. _doc_lab2:
 
 
-Lab 2 - Automatic Emergency Braking
+Lab 2 - Safety
 ====================================
 
 `Repo <https://github.com/f1tenth/f110_ros/tree/master/safety>`_
