@@ -9,9 +9,9 @@ This is not a public documentation as it contains solutions to the labs.
 
 There are three parts to this documentation.
 
-#. :ref:`Course Overview <doc_overview>` gives a brief overview of what the class is about and a snapshot of the materials that are presented. It also details the prerequisities needed.
-#. :ref:`Lectures <doc_lecture_intro>` contains lecture materials (recordings and slides).
-#. :ref:`Labs <doc_labs_intro>` has lab handouts and solutions.
+#. :ref:`Course Overview <doc_overview>` gives a brief overview of what the class is about and a snapshot of the materials that are presented. It also details the prerequisities needed and the syllabus.
+#. :ref:`Course Sessions <doc_lecture_intro>` contains lecture materials (recordings and slides) and information on the final project.
+#. :ref:`Assignments <doc_labs_intro>` has lab handouts and solutions.
 
 For files of the f1tenth logo, see :ref:`Press <doc_logos>`
 

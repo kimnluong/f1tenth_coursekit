@@ -1,0 +1,284 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Lecture 4.1 - PID &mdash; F1tenth latest documentation</title>
+  
+
+  
+  
+    <link rel="shortcut icon" href="../_static/f1_stickers_02.png"/>
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+        <script type="text/javascript" src="../_static/js/custom.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+   
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Lecture 5.1 - VESC Tuning" href="lecture07.html" />
+    <link rel="prev" title="Lecture 3.1 - Pose Representation and Coordinate Transforms" href="lecture05.html" />
+
+
+  <script type="text/javascript">
+    <!-- Adds target=_blank to external links -->
+
+    $(document).ready(function () {
+      $('a[href^="http://"], a[href^="https://"]').not('a[class*=internal]').attr('target', '_blank');
+    });
+  </script>
+
+ 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html">
+          
+
+          
+            
+            <img src="../_static/f1_stickers_02.png" class="logo" alt="Logo"/>
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                latest
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Course Overview</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../overview/syllabus.html">Syllabus</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Course Sessions</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Lectures</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="lecture01.html">Lecture 1 - Introduction to F1tenth Autonomous Racing</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture02.html">Lecture 1.2 - Using F1/10 Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture03.html">Lecture 2.1 - Automatic Emergency Braking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture04.html">Lecture 2.2 - Working with the Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture05.html">Lecture 3.1 - Pose Representation and Coordinate Transforms</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lecture 4.1 - PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture07.html">Lecture 5.1 - VESC Tuning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture08.html">Lecture 6.1 - Reactive Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture09.html">Lecture 7.1 - Localization and Scan Matching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture10.html">Lecture 7.2 - Localization: Scan Matching with Fast Correspondence Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture11.html">Lecture 8.1 - Using Google Cartographer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture12.html">Lecture 8.2 - Particle Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture13.html">Lecture 9.1 - Pure Pursuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture14.html">Lecture 10.1 - Project Proposal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture15.html">Lecture 11.1 - Motion Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture16.html">Lecture 12.1 - Computer Vision</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture17.html">Lecture 13.1 - Raceline Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture18.html">Lecture 13.2 - Model Predictive Control</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="final_project.html">Final Project</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Assignments</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../labs/index.html">Labs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab1.html">Lab 1 - Intro to ROS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab2.html">Lab 2 - Safety</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab3.html">Lab 3 - Wall Following</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab4.html">Lab 4 - Follow the Gap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab5.html">Lab 5 - Scan Matching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab6.html">Lab 6 - Pure Pursuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab7.html">Lab 7 - Motion Planning (RRT)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../labs/lab8.html">Lab 8 - Perception and Planning</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption"><span class="caption-text">Press</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../press/logos.html">Logos</a></li>
+</ul>
+<p class="caption"><span class="caption-text">Support</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../contact.html">Contact</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">F1tenth</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="index.html">Lectures</a> &raquo;</li>
+        
+      <li>Lecture 4.1 - PID</li>
+    
+    
+
+
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            
+              <a href="https://github.com/f1tenth/f1tenth_doc/blob/master/lectures/lecture06.rst" class="fa fa-github"> Edit on GitHub</a>
+            
+          
+        
+      </li>
+    
+
+
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="lecture-4-1-pid">
+<span id="doc-lecture04-1"></span><h1>Lecture 4.1 - PID<a class="headerlink" href="#lecture-4-1-pid" title="Permalink to this headline">¶</a></h1>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="lecture07.html" class="btn btn-neutral float-right" title="Lecture 5.1 - VESC Tuning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="lecture05.html" class="btn btn-neutral float-left" title="Lecture 3.1 - Pose Representation and Coordinate Transforms" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018-2020, f1tenth community (CC-BY-NC-SA 4.0)
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

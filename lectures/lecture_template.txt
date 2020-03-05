@@ -1,0 +1,23 @@
+
+This lecture will give you an overview on blah blah.
+
+
+Lecture Overview: 
+Paragraph about what lecture is about. E.g. start your engine! Take on wild ride on topics covered in fun and exciting world of autonomous racing. In this lecture we will cover these three central themes: A, B, C. In A, we …. In B, you’ll learn… In C, … By the end of this lecture, you will be able to do x, y,z.
+
+
+Topics Covered:
+-	Reactive methods
+-	Follow the gap
+-	SLAM
+
+
+.. raw:: html
+
+	<iframe width="700" height="500" src="EMBED LINK GOES HERE" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+
+
+Links to additional resources:
+Recommended Readings:
+-	Link to papers 

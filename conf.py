@@ -81,8 +81,8 @@ html_theme_options = {
 # VCS options: https://docs.readthedocs.io/en/latest/vcs.html#github
 html_context = {
     "display_github": not is_i18n, # Integrate GitHub
-    "github_user": "godotengine", # Username
-    "github_repo": "godot-docs", # Repo name
+    "github_user": "f1tenth", # Username
+    "github_repo": "f1tenth_doc", # Repo name
     "github_version": "master", # Version
     "conf_py_path": "/", # Path in the checkout to the docs root
 }

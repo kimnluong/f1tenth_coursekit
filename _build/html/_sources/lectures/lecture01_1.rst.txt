@@ -1,5 +1,25 @@
 .. _doc_lecture01_1:
 
 
-Lecture 1.1 - Intro
-====================
+Lecture 1 - Introduction to F1tenth Autonomous Racing
+=========================================================
+
+This lecture will give you an overview on blah blah.
+
+
+Lecture Overview: 
+Paragraph about what lecture is about. E.g. start your engine! Take on wild ride on topics covered in fun and exciting world of autonomous racing. In this lecture we will cover these three central themes: A, B, C. In A, we …. In B, you’ll learn… In C, … By the end of this lecture, you will be able to do x, y,z.
+
+[insert slides]
+[insert video here]
+
+
+Topics Covered:
+-	Reactive methods
+-	Follow the gap
+-	SLAM
+
+
+Links to additional resources:
+Recommended Readings:
+-	Link to papers 

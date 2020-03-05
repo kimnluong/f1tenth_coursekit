@@ -4,7 +4,7 @@
 Lectures
 ==================
 
-All of the lecture slides can be downloaded `here <https://drive.google.com/drive/u/1/folders/1KOa3i9pG8R_-pPSU_Boocsqpqo4_rdRQ>`_.
+All of the lecture slides can be downloaded `here <https://drive.google.com/drive/u/1/folders/16E2O-eipohDsHikqK4O5o2GDcS1DWa16>`_. We want to keep track of people who have downloaded our material so you will need to request access before downloading.
 
 
 .. toctree::
@@ -12,21 +12,21 @@ All of the lecture slides can be downloaded `here <https://drive.google.com/driv
    :caption: Lecture Slides
    :name: sec-lectures-intro
 
-   lecture01_1
-   lecture01_2
-   lecture02_1
-   lecture02_2
-   lecture03_1
-   lecture04_1
-   lecture05_1
-   lecture06_1
-   lecture07_1
-   lecture07_2
-   lecture08_1
-   lecture08_2
-   lecture09_1
-   lecture10_1
-   lecture11_1
-   lecture12_1
-   lecture13_1
-   lecture13_2
+   lecture01
+   lecture02
+   lecture03
+   lecture04
+   lecture05
+   lecture06
+   lecture07
+   lecture08
+   lecture09
+   lecture10
+   lecture11
+   lecture12
+   lecture13
+   lecture14
+   lecture15
+   lecture16
+   lecture17
+   lecture18
