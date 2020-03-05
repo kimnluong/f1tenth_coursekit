@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lecture 3.1 - Pose Representation and Coordinate Transforms &mdash; F1tenth latest documentation</title>
+  <title>Lecture 5 - Pose Representation and Coordinate Transforms &mdash; F1tenth latest documentation</title>
   
 
   
@@ -40,8 +40,8 @@
    
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Lecture 4.1 - PID" href="lecture06.html" />
-    <link rel="prev" title="Lecture 2.2 - Working with the Simulator" href="lecture04.html" />
+    <link rel="next" title="Lecture 6 - Laplace Domain Dynamics &amp; PID" href="lecture06.html" />
+    <link rel="prev" title="Lecture 4 - Working with the F1TENTH Simulator" href="lecture04.html" />
 
 
   <script type="text/javascript">
@@ -113,12 +113,12 @@
 <p class="caption"><span class="caption-text">Course Sessions</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Lectures</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="lecture01.html">Lecture 1 - Introduction to F1tenth Autonomous Racing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lecture02.html">Lecture 1.2 - Using F1/10 Simulator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lecture03.html">Lecture 2.1 - Automatic Emergency Braking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lecture04.html">Lecture 2.2 - Working with the Simulator</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Lecture 3.1 - Pose Representation and Coordinate Transforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="lecture06.html">Lecture 4.1 - PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture01.html">Lecture 1 - Introduction to F1TENTH Autonomous Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture02.html">Lecture 2 - Tutorial: Using the F1TENTH Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture03.html">Lecture 3 - Automatic Emergency Braking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture04.html">Lecture 4 - Working with the F1TENTH Simulator</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Lecture 5 - Pose Representation and Coordinate Transforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lecture06.html">Lecture 6 - Laplace Domain Dynamics &amp; PID</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lecture07.html">Lecture 5.1 - VESC Tuning</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lecture08.html">Lecture 6.1 - Reactive Methods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="lecture09.html">Lecture 7.1 - Localization and Scan Matching</a></li>
@@ -203,7 +203,7 @@
         
           <li><a href="index.html">Lectures</a> &raquo;</li>
         
-      <li>Lecture 3.1 - Pose Representation and Coordinate Transforms</li>
+      <li>Lecture 5 - Pose Representation and Coordinate Transforms</li>
     
     
 
@@ -228,8 +228,33 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="lecture-3-1-pose-representation-and-coordinate-transforms">
-<span id="doc-lecture03-1"></span><h1>Lecture 3.1 - Pose Representation and Coordinate Transforms<a class="headerlink" href="#lecture-3-1-pose-representation-and-coordinate-transforms" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="lecture-5-pose-representation-and-coordinate-transforms">
+<span id="doc-lecture05"></span><h1>Lecture 5 - Pose Representation and Coordinate Transforms<a class="headerlink" href="#lecture-5-pose-representation-and-coordinate-transforms" title="Permalink to this headline">¶</a></h1>
+<dl class="docutils">
+<dt><strong>Overview:</strong></dt>
+<dd>A point in the real world can be defined in different ways from different perspectives. If the lidar, which is attached to a moving vehicle, detects an obstacle, we might want to know the obstacle’s position in the real world. As the vehicle traverses the environment to create a map of the environment, the algorithm on the vehicle is actually creating multiple submaps and then tying all these submaps together and creating one global solution. In both of these applications, we will need to understand and use reference frames and frame transformations. This lecture will shed light on these two topics.</dd>
+<dt><strong>Topics Covered:</strong></dt>
+<dd><ul class="first last simple">
+<li>Coordinate Frames and Transformations</li>
+<li>Reference Frames and Rigid Body Transformations</li>
+<li>Frames and Transformations in ROS</li>
+</ul>
+</dd>
+</dl>
+<p><strong>Slides:</strong></p>
+<blockquote>
+<div><iframe width="700" height="500" src="https://docs.google.com/presentation/d/e/2PACX-1vQQhIoepwcijdxhWZXgYIIaofFuv4sG5oIu0BwYFP3vgEH-a-Iptkzk6ox29FmoHMMBVyuoRsQbi2qQ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe></div></blockquote>
+<p><strong>Video:</strong></p>
+<blockquote>
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/zkMelEB3-PY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></blockquote>
+<dl class="docutils">
+<dt><strong>Links to additional resources:</strong></dt>
+<dd><ul class="first last simple">
+<li><a class="reference external" href="https://www.amazon.com/Robot-Modeling-Control-Mark-Spong/dp/0471649902/ref=sr_1_1?keywords=Robot+Modeling+and+Control&amp;link_code=qs&amp;qid=1583440764&amp;sr=8-1">Robot Modeling and Control</a></li>
+<li><a class="reference external" href="http://wiki.ros.org/tf2_ros">tf2_ros</a></li>
+</ul>
+</dd>
+</dl>
 </div>
 
 
@@ -240,10 +265,10 @@
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="lecture06.html" class="btn btn-neutral float-right" title="Lecture 4.1 - PID" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="lecture06.html" class="btn btn-neutral float-right" title="Lecture 6 - Laplace Domain Dynamics &amp; PID" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="lecture04.html" class="btn btn-neutral float-left" title="Lecture 2.2 - Working with the Simulator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="lecture04.html" class="btn btn-neutral float-left" title="Lecture 4 - Working with the F1TENTH Simulator" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   

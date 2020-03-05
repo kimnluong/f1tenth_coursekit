@@ -1,23 +1,25 @@
+**Overview:** 
+	This lecture is an introduction to the F1TENTH Autonomous Vehicle Community. We go over course logistics (grading, policies, syllabus), course support (teaching team, piazza), and expectations. We will end the lecture with a brief introduction to the world of autonomous racing. By the end of this lecture, you will have gotten your first taste of the exciting world of autonomous systems.
 
-This lecture will give you an overview on blah blah.
+**Topics Covered:**
+	-	Course Logistics
+	-	Course Support
+	-	Intro to Autonomous Systems
 
+**Slides:**
 
-Lecture Overview: 
-Paragraph about what lecture is about. E.g. start your engine! Take on wild ride on topics covered in fun and exciting world of autonomous racing. In this lecture we will cover these three central themes: A, B, C. In A, we …. In B, you’ll learn… In C, … By the end of this lecture, you will be able to do x, y,z.
+	.. raw:: html
 
-
-Topics Covered:
--	Reactive methods
--	Follow the gap
--	SLAM
-
-
-.. raw:: html
-
-	<iframe width="700" height="500" src="EMBED LINK GOES HERE" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+		<iframe width="700" height="500" src=EMBED_LINK_HERE></iframe>
 
 
+**Video:**
 
-Links to additional resources:
-Recommended Readings:
--	Link to papers 
+	.. raw:: html
+
+		<iframe width="560" height="315" src="https://www.youtube.com/embed/zkMelEB3-PY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+**Links to additional resources:**
+	- `F1TENTH Main Website <http://f1tenth.org/>`_
+	- Piazza
