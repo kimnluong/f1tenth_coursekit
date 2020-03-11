@@ -4,7 +4,7 @@
 Lectures
 ==================
 
-All of the lecture slides can be downloaded `here <https://drive.google.com/drive/u/1/folders/16E2O-eipohDsHikqK4O5o2GDcS1DWa16>`_. We want to keep track of people who have downloaded our material so you will need to request access before downloading.
+Our material is available for download, but we want so you will need to request access before downloading. Fill out this `form <https://forms.gle/4UJigTa36VAMyGheA>`_. We will review your responses shortly and grant you access to the drive folder via email.
 
 
 .. toctree::

@@ -23,9 +23,9 @@ source_encoding = 'utf-8-sig'
 master_doc = 'index'
 
 # General information about the project
-project = 'F1tenth'
-copyright = '2018-2020, f1tenth community (CC-BY-NC-SA 4.0)'
-author = 'f1tenth community'
+# project = 'F1tenth'
+# copyright = '2018-2020, f1tenth community (CC-BY-NC-SA 4.0)'
+# author = 'f1tenth community'
 
 # Version info for the project, acts as replacement for |version| and |release|
 # The short X.Y version
@@ -104,6 +104,11 @@ html_css_files = [
 html_js_files = [
     'js/custom.js',
 ]
+
+# Hide copyright in footer
+html_show_copyright = True
+html_show_sphinx = True
+html_last_updated_fmt = '%b %d, %Y'
 
 # Output file base name for HTML help builder
 htmlhelp_basename = 'F1tenthdoc'
