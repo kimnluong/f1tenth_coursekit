@@ -23,9 +23,9 @@ source_encoding = 'utf-8-sig'
 master_doc = 'index'
 
 # General information about the project
-project = 'F1tenth'
-copyright = '2018-2020, f1tenth community (CC-BY-NC-SA 4.0)'
-author = 'f1tenth community'
+project = 'F1TENTH - Code'
+# copyright = '2018-2020, f1tenth community (CC-BY-NC-SA 4.0)'
+# author = 'f1tenth community'
 
 # Version info for the project, acts as replacement for |version| and |release|
 # The short X.Y version
@@ -71,7 +71,7 @@ html_theme_options = {
     # 'typekit_id': 'hiw1hhg',
     # 'analytics_id': '',
     # 'sticky_navigation': True  # Set to False to disable the sticky nav while scrolling.
-    'logo_only': True,  # if we have a html_logo below, this shows /only/ the logo with no title text
+    'logo_only': False,  # if we have a html_logo below, this shows /only/ the logo with no title text
     'collapse_navigation': False,  # Collapse navigation (False makes it tree-like)
     'prev_next_buttons_location': 'bottom',
     # 'display_version': True,  # Display the docs version
@@ -87,7 +87,7 @@ html_context = {
     "conf_py_path": "/", # Path in the checkout to the docs root
 }
 
-html_logo = 'press/img/logo/f1_stickers_02.png'
+# html_logo = 'press/img/logo/f1_stickers_02.png'
 html_favicon = 'press/img/logo/f1_stickers_02.png'
 
 # These folders are copied to the documentation's HTML output
@@ -105,8 +105,13 @@ html_js_files = [
     'js/custom.js',
 ]
 
+# Hide copyright in footer
+html_show_copyright = True
+html_show_sphinx = True
+html_last_updated_fmt = '%b %d, %Y'
+
 # Output file base name for HTML help builder
-htmlhelp_basename = 'F1tenthdoc'
+htmlhelp_basename = 'F1TENTH_code'
 
 # -- Options for reStructuredText parser ----------------------------------
 
@@ -119,7 +124,7 @@ file_insertion_enabled = False
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-  (master_doc, 'F1tenth.tex', 'F1tenth Documentation',
+  (master_doc, 'F1tenth.tex', 'F1tenth Code Documentation',
    'f1tenth community', 'manual'),
 ]
 
