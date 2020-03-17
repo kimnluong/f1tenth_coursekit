@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Lab 7 - Motion Planning (RRT) &mdash; F1tenth latest documentation</title>
+  <title>Lab 7 - Motion Planning (RRT) &mdash; Python latest documentation</title>
   
 
   
@@ -113,24 +113,24 @@
 <p class="caption"><span class="caption-text">Course Sessions</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="../lectures/index.html">Lectures</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture01.html">Lecture 1 - Introduction to F1tenth Autonomous Racing</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture02.html">Lecture 1.2 - Using F1/10 Simulator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture03.html">Lecture 2.1 - Automatic Emergency Braking</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture04.html">Lecture 2.2 - Working with the Simulator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture05.html">Lecture 3.1 - Pose Representation and Coordinate Transforms</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture06.html">Lecture 4.1 - PID</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture07.html">Lecture 5.1 - VESC Tuning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture08.html">Lecture 6.1 - Reactive Methods</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture09.html">Lecture 7.1 - Localization and Scan Matching</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture10.html">Lecture 7.2 - Localization: Scan Matching with Fast Correspondence Search</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture11.html">Lecture 8.1 - Using Google Cartographer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture12.html">Lecture 8.2 - Particle Filters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture13.html">Lecture 9.1 - Pure Pursuit</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture14.html">Lecture 10.1 - Project Proposal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture15.html">Lecture 11.1 - Motion Planning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture16.html">Lecture 12.1 - Computer Vision</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture17.html">Lecture 13.1 - Raceline Optimization</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture18.html">Lecture 13.2 - Model Predictive Control</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture01.html">Lecture 1 - Introduction to F1TENTH Autonomous Vehicle</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture02.html">Lecture 2 - Tutorial: Using the F1TENTH Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture03.html">Lecture 3 - Automatic Emergency Braking</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture04.html">Lecture 4 - Working with the F1TENTH Simulator</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture05.html">Lecture 5 - Pose Representation and Coordinate Transforms</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture06.html">Lecture 6 - Laplace Domain Dynamics &amp; PID</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture07.html">Lecture 7 - VESC Tuning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture08.html">Lecture 8 - Reactive Methods</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture09.html">Lecture 9 - Localization and Scan Matching</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture10.html">Lecture 10 - Localization: Scan Matching with Fast Correspondence Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture11.html">Lecture 11 - Using Google Cartographer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture12.html">Lecture 12 - Particle Filters</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture13.html">Lecture 13 - Pure Pursuit</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture14.html">Lecture 14 - Project Proposal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture15.html">Lecture 15 - Motion Planning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture16.html">Lecture 16 - Vision: Detection and Pose Estimation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture17.html">Lecture 17 - Raceline Optimization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../lectures/lecture18.html">Lecture 18 - Model Predictive Control</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../lectures/final_project.html">Final Project</a></li>
@@ -170,7 +170,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">F1tenth</a>
+          <a href="../index.html">Python</a>
         
       </nav>
 
@@ -240,30 +240,34 @@ ROS is a meta-operating system which simplifies inter-process communication betw
            </div>
            
           </div>
-          <footer>
+            
+<footer>
   
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+    <div class="rst-footer-buttons">
       
-        <a href="lab8.html" class="btn btn-neutral float-right" title="Lab 8 - Perception and Planning" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="lab8.html" class="btn btn-neutral float-right" title="Lab 8 - Perception and Planning"/>Next <span class="icon icon-circle-arrow-right"></span></a>
       
       
-        <a href="lab6.html" class="btn btn-neutral float-left" title="Lab 6 - Pure Pursuit" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="lab6.html" class="btn btn-neutral" title="Lab 6 - Pure Pursuit"><span class="icon icon-circle-arrow-left"></span> Previous</a>
       
     </div>
   
 
   <hr/>
 
-  <div role="contentinfo">
-    <p>
-        &copy; Copyright 2018-2020, f1tenth community (CC-BY-NC-SA 4.0)
+  <p style="font-size: 85%">
+<!--
+      Copyright &copy;  -->
+    
+    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a>
+    <br/>
+    Content on this site by the <a xmlns:cc="http://creativecommons.org/ns#" href="http://f1tenth.org" property="cc:attributionName" rel="cc:attributionURL">F1TENTH Foundation</a>
+    is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"> Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+    Last updated on Mar 11, 2020.
+  </p>
 
-    </p>
-  </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
-
+ 
 </footer>
-
         </div>
       </div>
 

@@ -224,6 +224,23 @@ footer,
     color: var(--footer-color);
 }
 
+.footer {
+    padding: 1vw;
+}
+.footer-print {
+    font-size: 12px;
+    font-family: Montserrat;
+    text-align: center;
+    padding: 2vw;
+    border: 1px;
+    border-style: solid;
+    border-top-color: rgb(223,210,255);
+    border-left-color: #fff;
+    border-right-color: #fff;
+    border-bottom-color: #fff;
+    margin:0vw 10vw;
+}
+
 /* Main sections */
 
 .wy-nav-content-wrap {
